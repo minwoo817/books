@@ -22,3 +22,18 @@ const onAdd = () => {
 			})
 			.catch(e => {console.log(e);})
 }
+const onDelete = (bno) => {
+	
+	let result = confirm("정말 삭제 하시겠습니까?")
+	if(result == false) {
+		return;
+	}
+	const option = { method : 'DELETE' }
+	fetch(`/bookservice/book?bno=${bno}` , option)
+		.then(r => r.json())
+		.then(data => {
+			if(data == true) {alert('삭제성공'); findall();}
+			else{alert('삭제실패')}
+		})
+	.catch(e => {console.log(e);})
+}

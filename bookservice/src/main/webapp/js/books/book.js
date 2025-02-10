@@ -36,23 +36,3 @@ const onDelete = (bno) => {
 	.catch(e => {console.log(e);})
 }
 
-let bookInfo = null;
-
-
-const view = (bno) => {
-	let bno = new URL(location.href).searchParams.get('bno');
-	const option = {method : `GET`}
-	fetch(`/bookservice/book?bno=${bno}`, option)
-		.then(response => response.json())
-		.then(data =>{
-			document.querySelector('.bno').innerHTML = `${data.bno}`;
-			document.querySelector('.bname').innerHTML = `${data.bname}`;
-			document.querySelector('.bwriter').innerHTML = `${data.bwriter}`;
-			document.querySelector('.bpublisher').innerHTML = `${data.bpublisher}`;
-			document.querySelector('.bdate').innerHTML = `${data.bdate}`;
-			document.querySelector('.bupdate').innerHTML = `${data.bupdate}`;
-			bookInfo = data;
-		})
-		.catch(e => {console.log(e)})
-}
-view();

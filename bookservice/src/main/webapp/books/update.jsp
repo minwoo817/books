@@ -15,17 +15,17 @@
           <h3>도서생성</h3>
           <hr/>
           <h6>도서명</h6>
-            <input type="text" name="bname" class="form-control" id="floatingBname" placeholder="도서명">
+            <input type="text" name="bname" class="form-control bname" id="floatingBname" placeholder="도서명">
           </div>
           
           <div class="form-floating mb-3">
           <h6>저자</h6>
-            <input type="text" name="bwriter" class="form-control" id="floatingBwriter" placeholder="저자">
+            <input type="text" name="bwriter" class="form-control bwriter" id="floatingBwriter" placeholder="저자">
           </div>
           
           <div class="form-floating mb-3">
           <h6>출판사</h6>
-            <input type="text" name="bpublisher" class="form-control" id="floatingBpublisher" placeholder="계정비밀번호 확인">
+            <input type="text" name="bpublisher" class="form-control bpublisher" id="floatingBpublisher" placeholder="출판사">
             
           </div>
         

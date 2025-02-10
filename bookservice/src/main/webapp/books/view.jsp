@@ -39,7 +39,7 @@
         
                 <button class="w-100 btn btn-lg btn-primary" type="button" onclick="location.href='book.jsp' ">뒤로가기</button>
               <br/><br/>  
-          <button class="w-100 btn btn-lg btn-primary" type="button" onclick="location.href='update.jsp'">수정</button>
+          <button class="w-100 btn btn-lg btn-primary" type="button" onclick="onUpdate()">수정</button>
           <br/><br/>
           <button class="w-100 btn btn-lg btn-primary" type="button" onclick="onDelete() ">삭제</button>
          
